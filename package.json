@@ -2,7 +2,7 @@
   "name": "ecommerce-react",
   "version": "1.2.0",
   "main": "index.js",
-  "author": "Julius Guevarra",
+  "author": "IdooTeck",
   "keywords": [
     "react-webpack",
     "boilerplate",
@@ -54,6 +54,7 @@
   },
   "dependencies": {
     "@ant-design/icons": "^4.6.2",
+    "custom-env": "^2.0.1",
     "firebase": "^8.4.3",
     "formik": "^2.2.6",
     "history": "^4.10.0",

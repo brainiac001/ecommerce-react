@@ -11,7 +11,7 @@ import { Link } from 'react-router-dom';
 
 
 const Home = () => {
-  useDocumentTitle('Salinaka | Home');
+  useDocumentTitle('GeoKennes | Home');
   useScrollTop();
 
   const {
@@ -33,13 +33,13 @@ const Home = () => {
         <div className="banner">
           <div className="banner-desc">
             <h1 className="text-thin">
-              <strong>See</strong>
-              &nbsp;everything with&nbsp;
-              <strong>Clarity</strong>
+              <strong>Stand</strong>
+              &nbsp;out from&nbsp;
+              <strong>Everyone</strong>
             </h1>
             <p>
-              Buying eyewear should leave you happy and good-looking, with money in your pocket.
-              Glasses, sunglasses, and contacts—we’ve got your eyes covered.
+              Get the best off your budget, we don't only offer product that distinguish you from others,
+              but we also offer quality and durability.
             </p>
             <br />
             <Link to={SHOP} className="button">

@@ -1,11 +1,13 @@
+
 const firebaseConfig = {
-  apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
-  authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN,
-  databaseURL: import.meta.env.VITE_FIREBASE_DB_URL,
-  projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID,
-  storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET,
-  messagingSenderId: import.meta.env.VITE_FIREBASE_MSG_SENDER_ID,
-  appId: import.meta.env.VITE_FIREBASE_APP_ID
+  apiKey: "AIzaSyA7zhImcyeYtv8tNjWNWYyBC_nXCBqemA4",
+  authDomain: "geo-kennes.firebaseapp.com",
+  projectId: "geo-kennes",
+  storageBucket: "geo-kennes.appspot.com",
+  messagingSenderId: "550352359413",
+  appId: "1:550352359413:web:eae3c3eddc4f7947215abc",
+  measurementId: "G-WYQCPHGQLZ"
 };
+
 
 export default firebaseConfig;

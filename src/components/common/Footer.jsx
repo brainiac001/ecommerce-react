@@ -16,9 +16,7 @@ const Footer = () => {
       <div className="footer-col-1">
         <strong>
           <span>
-            Developed by
-            {' '}
-            <a href="https://github.com/jgudo">JULIUS GUEVARRA</a>
+          © GeoKennes 2022. All Rights Reserved.
           </span>
         </strong>
       </div>
@@ -32,8 +30,7 @@ const Footer = () => {
       <div className="footer-col-3">
         <strong>
           <span>
-            Fork this project &nbsp;
-            <a href="https://github.com/jgudo/ecommerce-react">HERE</a>
+            <a href="tel:+2349012881918">Call Customer Support</a>
           </span>
         </strong>
       </div>
