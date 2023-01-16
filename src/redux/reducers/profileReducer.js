@@ -3,8 +3,8 @@ import { CLEAR_PROFILE, SET_PROFILE, UPDATE_PROFILE_SUCCESS } from '@/constants/
 // import banner from 'static/banner.jpg';
 
 // const initState = {
-//   fullname: 'Pedro Juan',
-//   email: 'juanpedro@gmail.com',
+//   fullname: 'Oluwadamilare Idowu Joshua',
+//   email: 'oluwadamilareidowujoshua@gmail.com',
 //   address: '',
 //   mobile: {},
 //   avatar: profile,

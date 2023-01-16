@@ -14,18 +14,18 @@ import * as Yup from 'yup';
 
 // Default brand names that I used. You can use what you want
 const brandOptions = [
-  { value: 'Salt Maalat', label: 'Salt Maalat' },
-  { value: 'Betsin Maalat', label: 'Betsin Maalat' },
-  { value: 'Sexbomb', label: 'Sexbomb' },
-  { value: 'Black Kibal', label: 'Black Kibal' }
+  { value: 'Dior', label: 'Dior' },
+  { value: 'Thimberland', label: 'Thimberland' },
+  { value: 'Nike', label: 'Nike' },
+  { value: 'Gucci', label: 'Gucci' }
 ];
 
 const FormSchema = Yup.object().shape({
   name: Yup.string()
     .required('Product name is required.')
     .max(60, 'Product name must only be less than 60 characters.'),
-  brand: Yup.string()
-    .required('Brand name is required.'),
+  //brand: Yup.string()
+   // .required('Brand name is required.'),
   price: Yup.number()
     .positive('Price is invalid.')
     .integer('Price should be an integer.')
@@ -36,12 +36,12 @@ const FormSchema = Yup.object().shape({
     .positive('Max quantity is invalid.')
     .integer('Max quantity should be an integer.')
     .required('Max quantity is required.'),
-  keywords: Yup.array()
-    .of(Yup.string())
-    .min(1, 'Please enter at least 1 keyword for this product.'),
-  sizes: Yup.array()
-    .of(Yup.number())
-    .min(1, 'Please enter a size for this product.'),
+  //keywords: Yup.array()
+   // .of(Yup.string())
+    //.min(1, 'Please enter at least 1 keyword for this product.'),
+  //sizes: Yup.array()
+   // .of(Yup.number())
+    //.min(1, 'Please enter a size for this product.'),
   isFeatured: Yup.boolean(),
   isRecommended: Yup.boolean(),
   availableColors: Yup.array()
@@ -71,7 +71,7 @@ const ProductForm = ({ product, onSubmit, isLoading }) => {
   } = useFileHandler({ image: {}, imageCollection: product?.imageCollection || [] });
 
   const onSubmitForm = (form) => {
-    if (imageFile.image.file || product.imageUrl) {
+    if (imageFile.image.file != null || product.imageUrl != null) {
       onSubmit({
         ...form,
         quantity: 1,
@@ -297,11 +297,13 @@ const ProductForm = ({ product, onSubmit, isLoading }) => {
                 )}
               </div>
               <div className="product-form-image-wrapper">
+               
                 {(imageFile.image.url || product.image) && (
                   <ImageLoader
                     alt=""
                     className="product-form-image-preview"
                     src={imageFile.image.url || product.image}
+                    
                   />
                 )}
               </div>

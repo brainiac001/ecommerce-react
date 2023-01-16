@@ -85,6 +85,7 @@
   background: $color-facebook;
   color: $white;
   border: 1px solid $color-facebook;
+  display: none;
   
   &:hover {
     background: $color-facebook-hover;
@@ -97,6 +98,7 @@
   background: $color-github;
   color: $white;
   border: 1px solid $color-github;
+  display: none;
   
   &:hover {
     background: $color-github-hover;

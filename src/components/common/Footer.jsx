@@ -16,7 +16,7 @@ const Footer = () => {
       <div className="footer-col-1">
         <strong>
           <span>
-          © GeoKennes 2022. All Rights Reserved.
+          © GeoKennes {new Date().getFullYear()}. All Rights Reserved.
           </span>
         </strong>
       </div>
