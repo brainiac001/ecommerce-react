@@ -28,6 +28,10 @@
   }
 }
 
+#adminUser{
+  display: none;
+}
+
 .sidenavigation-menu-active {
   background: lighten($black, 7%);
   opacity: 1;

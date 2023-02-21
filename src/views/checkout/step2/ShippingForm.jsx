@@ -73,7 +73,7 @@ const ShippingForm = () => {
                       &nbsp; Outside Lagos Shipping &nbsp;
                       <span className="text-subtle">7-14 days</span>
                     </h5>
-                    <h4 className="margin-0">₦1000.00</h4>
+                    <h4 className="margin-0">₦5000.00</h4>
                   </label>
                 </div>
               </div>

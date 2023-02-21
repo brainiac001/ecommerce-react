@@ -7,7 +7,7 @@ const Error = ({ history }) => {
 
   return (
     <div className="page-not-found">
-      <h1>:( An error has occured. Please try again.</h1>
+      <h1>:( An error has occurred. Please try again.</h1>
       <br />
       <button
         className="button"

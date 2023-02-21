@@ -56,24 +56,15 @@ const Payment = ({ shipping, payment, subtotal }) => {
         validateOnChange
         validationSchema={FormSchema}
         validate={(form) => {
-
-          /*
           if (form.type === 'paypal') {
             displayActionMessage('Feature not ready yet!', 'info');
           }
-          */
         }}
         onSubmit={onConfirm}
       >
         {() => (
           <Form className="checkout-step-3">
-
-          {  
-          //this used to be the code to support credit card payment
-          /*
- <CreditPayment />
-          */
-         }
+            <CreditPayment />
             <PayPalPayment />
             <Total
               isInternational={shipping.isInternational}

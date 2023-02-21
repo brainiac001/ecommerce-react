@@ -2,8 +2,6 @@
 import { useFormikContext } from 'formik';
 import React from 'react';
 
-
-
 const PayPalPayment = () => {
   const { values, setValues } = useFormikContext();
 
@@ -27,9 +25,9 @@ const PayPalPayment = () => {
             htmlFor="modePayPal"
           >
             <div className="d-flex-grow-1 margin-left-s">
-              <h4 className="margin-0">Paystack</h4>
+              <h4 className="margin-0">PayPal</h4>
               <span className="text-subtle d-block margin-top-s">
-                Pay easily, fast and secure with Paystack.
+                Pay easily, fast and secure with PayPal.
               </span>
             </div>
             <div className="payment-img payment-img-paypal" />

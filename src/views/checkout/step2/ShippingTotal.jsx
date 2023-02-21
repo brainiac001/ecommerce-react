@@ -18,7 +18,7 @@ const ShippingTotal = ({ subtotal }) => {
             </td>
             <td>
               <h4 className="basket-total-amount text-subtle text-right margin-0 ">
-                {values.isInternational ? '₦1000.00' : '₦500.00'}
+                {values.isInternational ? '₦5000.00' : '₦3000.00'}
               </h4>
             </td>
           </tr>
@@ -42,7 +42,7 @@ const ShippingTotal = ({ subtotal }) => {
             </td>
             <td>
               <h2 className="basket-total-amount text-right">
-                {displayMoney(Number(subtotal) + (values.isInternational ? 1000 : 500))}
+                {displayMoney(Number(subtotal) + (values.isInternational ? 5000 : 3000))}
               </h2>
             </td>
           </tr>
